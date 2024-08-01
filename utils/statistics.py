@@ -19,7 +19,3 @@ def chi2_test(df, feature, target):
     contingency_table = pd.crosstab(df[feature], df[target])
     chi2_stat, p_val, dof, expected = stats.chi2_contingency(contingency_table)
     return chi2_stat, p_val
-
-def ci_bootstrap_test(data, num_boots=1000, confidence=0.95):
-    boots = [np.mean(np.random.choice(data, replace=True, size=len(data))) for _ in range(num_boots)]
-    return boots
