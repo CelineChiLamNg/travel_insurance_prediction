@@ -23,14 +23,17 @@ given.
 ## Approach & Methodology
 I approached this problem by following a structured methodology of data 
 exploration, preprocessing, and modeling.
-1. Data Exploration: Examined data distribution, linear correlation between features and 
-   between features/target variable, and multicollinearity (using variance 
-   inflation factor). Also, tested relevance of all features with hypothesis 
-   testing
-2. Preprocessing: Scale numerical features and encode categorical features.
-3. Modeling: Train data with logistic regression, random forest, and 
-   support vector machine (SVM). Hyperparameter tune with GridSearch. 
-   Combine all 3 models to create an ensemble hard voting model.
+1. Data Exploration:
+- Analyzed data distribution and correlations between features and the 
+   target variable.
+- Checked for multicollinearity using VIF and tested feature relevance with 
+  hypothesis testing.
+2. Preprocessing:
+Scaled numerical features and encoded categorical features.
+3. Modeling:
+- Trained Logistic Regression, Random Forest, and SVM models.
+- Tuned hyperparameters using GridSearchCV.
+- Combined all models into an ensemble hard voting classifier.
 
 
 ## Results
@@ -41,11 +44,13 @@ The model has the accuracy rate of 0.776.
 ## Challenges & Learnings
 As a first machine learning project, I was still trying to grasp all the new 
 concepts and methods. <br>
-**Furture Work:**<br>
+
+**Future Work:**
 1. Use pipeline for scalability
 2. For more reliable model evaluation: Prepare 3 sets of data for train, 
    evaluate, and test; baseline model; pick evaluation metrics based on 
    dataset and problem
-3. Iteratively train and test model to optimize results
+3. Iteratively train and test model to optimize results and to pick the 
+   best fitting methods.
 
 
